@@ -18,5 +18,9 @@ app.get("/hello", (req, res) => {
   return res.json({data: "hello too" })
 });
 
+app.get("/thanks", (req, res) => {
+  return res.json({data: "welcome" })
+});
+
 app.listen(3000);
 console.log(`App listening on http://localhost:3000`);
