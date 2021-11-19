@@ -1,2 +1,2 @@
 #!/bin/bash
-sed "s/tagVersion/$1/g" simple-php-app-raw.yaml > simple-php-app.yaml
+sed "s/tagVersion/$1/g" deployment-pingpong-app.yaml > pingpong-app.yaml
