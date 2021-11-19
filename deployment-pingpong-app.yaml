@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: pingpong-app
-          image: devlabtwinggo/pingpong-nodejs-app:latest
+          image: devlabtwinggo/pingpong-nodejs-app:tagVersion
           ports:
             - containerPort: 3000
 
