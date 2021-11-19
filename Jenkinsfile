@@ -13,6 +13,8 @@ node {
     }
    }
    stage('Deploy') {
+      sh "chmod +x changeTag.sh"
+      sh "./changeTag.sh ${commit_id}"
       kubernetesDeploy(configs: "deployment-pingpong-app.yaml", kubeconfigId: "kubeconfig")
    }
 }
