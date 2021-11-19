@@ -19,5 +19,6 @@ node {
          } else {
             kubernetesDeploy(configs: "deployment-pingpong-app.yaml", kubeconfigId: "kubeconfig")
          }
+      }
    }
 }
