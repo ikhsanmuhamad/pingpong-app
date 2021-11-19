@@ -13,11 +13,6 @@ node {
     }
    }
    stage('Deploy') {
-      Boolean bool = sh "kubectl get deployment -n development | grep pingpong-app"
-      if (bool) {
-         sh "kubectl rollout restart pingpong-app -n development"
-      } else {
-         kubernetesDeploy(configs: "deployment-pingpong-app.yaml", kubeconfigId: "kubeconfig")
-      }
+      kubernetesDeploy(configs: "deployment-pingpong-app.yaml", kubeconfigId: "kubeconfig")
    }
 }
