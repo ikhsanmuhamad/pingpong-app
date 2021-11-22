@@ -30,5 +30,9 @@ app.get("/who", (req, res) => {
   return res.json({data: "me" })
 });
 
+app.get("/where", (req, res) => {
+  return res.json({data: "here"})
+});
+
 app.listen(3000);
 console.log(`App listening on http://localhost:3000`);
